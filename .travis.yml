@@ -1,0 +1,11 @@
+language: python
+
+python :
+    - "2.7"
+
+script:
+    - ./env.sh
+    - coverage run unittest/runall.py
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
