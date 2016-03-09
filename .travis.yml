@@ -10,6 +10,7 @@ befor_script:
     - source ./env.sh
 
 script:
+    - source ./env.sh
     - python unittest/runall.py
 
 after_success:
