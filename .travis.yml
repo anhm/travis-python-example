@@ -6,10 +6,9 @@ install:
 python :
     - "2.7"
 
-matrix:
-    include:
-        env: >
-            PYTHONPATH=`pwd`/src
+env:
+    global:
+        - PYTHONPATH=`pwd`/src
 
 script:
     - python unittest/runall.py
