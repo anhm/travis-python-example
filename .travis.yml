@@ -6,11 +6,12 @@ install:
 python :
     - "2.7"
 
-befor_script:
-    - source ./env.sh
+matrix:
+    include:
+        - env: >
+            PYTHONPATH:`pwd`/src
 
 script:
-    - source ./env.sh
     - python unittest/runall.py
 
 after_success:
