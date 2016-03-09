@@ -7,7 +7,7 @@ python :
     - "2.7"
 
 script:
-    - ./env.sh
+    - source env.sh
     - coverage run unittest/runall.py
 
 after_success:
