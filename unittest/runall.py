@@ -2,7 +2,12 @@ import os
 import unittest
 
 for k, v in os.environ.items():
-    print "%s:%s" %  (k, v)
+    if k.startswith('PYTHONPATH'):
+        print "%s:%s" %  (k, v)
+        break
+else:
+    print "not found PYTHONPATH"
+        
 
 import example
 
