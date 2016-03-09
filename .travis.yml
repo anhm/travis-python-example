@@ -6,8 +6,10 @@ install:
 python :
     - "2.7"
 
+befor_script:
+    - source ./env.sh
+
 script:
-    - source env.sh
     - coverage run unittest/runall.py
 
 after_success:
