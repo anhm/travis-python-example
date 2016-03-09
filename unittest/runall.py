@@ -16,7 +16,7 @@ class TestPython(unittest.TestCase):
         self.assertEqual(example.a(), 1)
 
     def test_b(self):
-        self.assertEqual(example.b(), 1)
+        self.assertEqual(example.b(), 2)
 
 
 if __name__ == '__main__':
