@@ -10,8 +10,7 @@ befor_script:
     - source ./env.sh
 
 script:
-    - source env.sh
-    - source env.sh; coverage run unittest/runall.py
+    - coverage run unittest/runall.py
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
