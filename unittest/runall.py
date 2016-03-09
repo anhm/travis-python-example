@@ -1,6 +1,9 @@
 import os
 import unittest
 
+for k, v in os.environ.items():
+    print "%s:%s" %  (k, v)
+
 import example
 
 class TestPython(unittest.TestCase):
@@ -12,7 +15,5 @@ class TestPython(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    for k, v in os.environ.items():
-        print "%s:%s" %  (k, v)
 
     unittest.main()
