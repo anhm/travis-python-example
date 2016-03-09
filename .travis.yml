@@ -1,5 +1,8 @@
 language: python
 
+install:
+    - pip install codecov
+
 python :
     - "2.7"
 
