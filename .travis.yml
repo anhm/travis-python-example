@@ -8,7 +8,6 @@ python :
 
 matrix:
     include:
-        python: 2.7
         env: >
             PYTHONPATH=`pwd`/src
 
