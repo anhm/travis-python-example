@@ -25,7 +25,7 @@ script:
     - source ~/.profile
     - echo $PYTHONPATH
     - pwd; echo $PYTHONAPTH
-    - echo which python
+    - which python
     - echo $PYTHONPATH; python unittest/runall.py
 
 after_success:
