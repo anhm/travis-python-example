@@ -8,7 +8,7 @@ python :
 
 env:
     global:
-        - PYTHONPATH=`pwd`/src
+        - source env.sh
 
 script:
     - coverage run unittest/runall.py
