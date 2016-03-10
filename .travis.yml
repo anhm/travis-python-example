@@ -11,9 +11,9 @@ env:
         - source env.sh
 
 befor_script:
-    - echo 'Test=============='
-    - sh env.sh >> ~/.profile
-    - cat ~/.profile
+    - ls -al
+    - sh env.sh >> ~/.bash_profile
+    - ls -al
 
 script:
     - cat ~/.profile
