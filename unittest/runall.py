@@ -1,6 +1,8 @@
 import os
 import unittest
 
+print 'cur path'
+print os.path.abspath(os.path.curdir)
 for k, v in os.environ.items():
     if k.startswith('PYTHONPATH'):
         print "%s:%s" %  (k, v)
