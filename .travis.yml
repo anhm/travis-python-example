@@ -21,8 +21,10 @@ script:
     - echo $PYTHONPATH
     - source ~/.bash_profile
     - echo $PYTHONPATH
+    - pwd
     - source ~/.profile
     - echo $PYTHONPATH
+    - pwd
     - coverage run unittest/runall.py
 
 after_success:
