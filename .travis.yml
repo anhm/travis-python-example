@@ -8,24 +8,9 @@ python :
 
 env:
     global:
-        - source env.sh
+        - source: env.sh
 
 script:
-    - ls -al
-    - sh env.sh >> ~/.bash_profile
-    - echo $PYTHONPATH
-    - sh env.sh >> ~/.profile
-    - echo $PYTHONPATH
-    - ls -al
-    - cat ~/.bash_profile
-    - echo $PYTHONPATH
-    - source ~/.bash_profile
-    - echo $PYTHONPATH
-    - pwd
-    - source ~/.profile
-    - echo $PYTHONPATH
-    - pwd; echo $PYTHONPATH
-    - which python
     - echo $PYTHONPATH; python unittest/runall.py
 
 after_success:
