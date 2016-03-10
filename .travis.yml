@@ -11,9 +11,8 @@ env:
         - source env.sh
 
 befor_script:
-    - ls -al ~/
+    - sh env.sh >> ~/.profile
     - cat ~/.profile
-    - cat env.sh >> ~/.profile
 
 script:
     - cat ~/.profile
