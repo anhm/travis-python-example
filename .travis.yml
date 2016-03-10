@@ -25,7 +25,8 @@ script:
     - source ~/.profile
     - echo $PYTHONPATH
     - pwd; echo $PYTHONAPTH
-    - echo $PYTHONPATH; coverage run unittest/runall.py
+    - echo which python
+    - echo $PYTHONPATH; python unittest/runall.py
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
