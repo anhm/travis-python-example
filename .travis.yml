@@ -16,7 +16,7 @@ befor_script:
     - ls -al
 
 script:
-    - cat ~/.profile
+    - cat ~/.bash_profile
     - coverage run unittest/runall.py
 
 after_success:
