@@ -10,7 +10,11 @@ env:
     global:
         - source env.sh
 
+befor_script:
+    - cat env.sh >> ~/.bash_profile
+
 script:
+    - cat ~/.bash_profile
     - coverage run unittest/runall.py
 
 after_success:
